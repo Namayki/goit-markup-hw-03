@@ -6,6 +6,7 @@
 --background-origin: #2F303A;
 --footer-contacts:rgba(255, 255, 255, 0.6);
 --header-logo-dark:#000000;
+--background-team:#F5F4FA;
 }
 
     p, h1, h2, h3, h4, h5, h6 {
@@ -225,13 +226,13 @@
         margin: 0 auto;
     }
     
-    .main-btn:hover, 
-    .main-btn:focus {
+    .btn-portfolio:hover, 
+    .btn-portfolio:focus {
         color: var(--title-color);
     }
     
-    .main-btn:hover, 
-    .main-btn:focus {
+    .btn-portfolio:hover, 
+    .btn-portfolio:focus {
         background-color: var(--accent-color);
     }
     
@@ -300,6 +301,7 @@
     .team {
         padding-top: 94px;
         padding-bottom: 94px;
+        background-color:var(--background-team);
     }
 
     .team-title {
@@ -336,26 +338,28 @@
     /* --------------- projects --------------- */
 
     .portfolio {
-            display: wrap;
     }
 
     .portfolio-container {
-        padding-top: 94px;
-        padding-bottom: 94px;
+
     }
 
-    .btn-container {
-      
+    .portfolio-btn-container {
+        padding-left: 280px;
+        padding-right: 280px;
+    }  
+
+    .btn-list {
     }
 
-    .btn-list { 
-    
-    }
-
-    .main-btn {
+    .btn-portfolio {
+        padding-top: 6px;
+        padding-right: 22px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        margin-top: 94px;
         margin-right: 8px;
         margin-bottom: 50px;
-        cursor: pointer;
         font-size: 16px;
         line-height: 1.63;
         align-items: center;
@@ -364,24 +368,29 @@
         color: var(--header-color);
     }
 
+    .projects {
+    }
+
     .projects-container {
-    
+        margin-bottom: 94px;
     }
 
     .projects-list {
-    
-    }
-
-    .project-card {
-        
-    }
-
-    .project-img {
         display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+    }
+
+    .project-item {
+        flex-basis: calc ((100%-3*30px) / 3);
+        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
     .project-title-container {
-        margin: 20px, 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
     }
 
     .project-title {
