@@ -7,6 +7,7 @@
 --footer-contacts:rgba(255, 255, 255, 0.6);
 --header-logo-dark:#000000;
 --background-team:#F5F4FA;
+--border-color: #EEEEEE;
 }
 
     p, 
@@ -91,8 +92,14 @@
         color: var(--header-logo-dark);
     }
 
+    .footer-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
     .footer-logo-light {
         color: var(--title-color);
+       
     }
 
     /* --------------- header ---------------*/
@@ -167,12 +174,12 @@
     
     .footer {
         background-color: var(--background-origin);
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .footer-container {
         display: column;
-        padding-top: 60px;
-        padding-bottom: 60px;
     }
 
     .footer-address {
@@ -181,22 +188,28 @@
 
     .footer-address-menu {
         display: inline-block;
-        padding-top: 20px;
+    }
+
+    .footer-address-connect:not(:last-child) {
+    margin-bottom: 9px;
     }
     
     /* --------------- address ---------------  */
     
     .footer-address-link:not(:last-child) {
-        padding-bottom: 9px;
+  padding-bottom: 15px;
     }
 
     .footer-address-link {
+        display: block;
+
         font-style: normal;
         font-weight: normal;
         font-size: 14px; 
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: var(--title-color);
+  
     }
     
     .footer-address-link:hover,
@@ -251,6 +264,7 @@
         letter-spacing: 0.06em;
         color:var(--title-color);
         background-color:var(--accent-color);
+        border-radius: 4px;
         margin: 0 auto;
     }
     
@@ -276,7 +290,6 @@
     /* --------------- feature --------------- */
     
     .feature {
-        padding-top: 94px;
         padding-bottom: 94px;
     }
 
@@ -307,7 +320,6 @@
     /* --------------- typography --------------- */
 
     .typography {
-        padding-top: 94px;
         padding-bottom: 94px;
     }
 
@@ -397,6 +409,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--header-color);
+        border-radius: 4px;
     }
 
     .projects-list {
@@ -412,6 +425,9 @@
     }
 
     .projects-title-container {
+        background-color: var(--title-color);
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 24px;
