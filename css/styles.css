@@ -362,7 +362,7 @@
 
     .team-list {
         font-size: 16px;
-        line-height: 1.19x;
+        line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
         display: flex;
