@@ -278,9 +278,8 @@
 
     .feature-item:not(:last-child),
     .typography-item:not(:last-child),
-    .team-item:not(:last-child),
-     {
-        margin-right: 30px;
+    .team-item:not(:last-child){
+    margin-right: 30px;
     }
     
     /* --------------- feature --------------- */
@@ -443,8 +442,6 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.03em;
-        color: var(--header-color);
-        padding-right: ;
     }
     
     .projects-text {
