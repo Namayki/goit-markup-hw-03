@@ -106,7 +106,7 @@
 
     .header {
         border-bottom: 1px solid #E5E5E5;
-        padding-top: 25px;
+        padding-top: 24px;
         padding-bottom: 25px;
     }
 
@@ -137,7 +137,7 @@
     }
 
     .menu-item:not(:last-child),
-    .header-connect-item {
+    .header-connect-item:not(:last-child) {
         margin-right: 50px;
     }
 
@@ -180,7 +180,7 @@
     }
 
     .footer-container {
-        display: column;
+        display: ;
     }
 
     .footer-address {
@@ -291,7 +291,6 @@
 
     .feature-list {
         display: flex;
-        justify-content: space-between;
     }
 
     .feature-item {
@@ -329,6 +328,10 @@
     .typography-list {
         display: flex;
         justify-content: space-between;
+    }
+
+    .typography-item {
+        width: 370px;
     }
 
     .typography-title,
@@ -414,6 +417,8 @@
         border-radius: 4px;
     }
 
+/* --------------- our projects --------------- */
+
     .projects-list {
         display: flex;
         flex-wrap: wrap;
@@ -442,6 +447,7 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.03em;
+        margin-bottom: 4px;
     }
     
     .projects-text {
